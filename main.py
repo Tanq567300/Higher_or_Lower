@@ -14,18 +14,18 @@ while True:
         print(f"Compare A: {compare_A['name']} ,a {compare_A['description']}, from {compare_A['country']}. \n {a.vs} \nAgainst B: {compare_B['name']} ,a {compare_B['description']}, from {compare_B['country']}.")
         user= input("Enter A or B: ").lower()
         if user == 'a' and compare_A==answer:
-            print("\n" * 20)
+         
             score+=1
             print(f"correct, your score is {score}.")
             answer= compare_A
             continue
         elif user == 'b' and compare_B==answer:
-            print("\n" * 20)
+          
             score+=1
             print(f"correct, your score is {score}.")
             answer= compare_B
         else:
-            print("\n" * 20)
+        
             print(a.logo)
             print(f"Game Over \n Your score {score}")
             break
